@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Event Hive",
-  description: "Event Hive is an event management system.",
+  title: "Crowd Sync",
+  description: "Crowd Sync is an event management system.",
   icons: {
     icon: '/assets/images/logo.svg'
   }
