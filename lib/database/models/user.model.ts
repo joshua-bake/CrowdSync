@@ -7,11 +7,11 @@ const UserSchema = new Schema({
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     photo: { type: String, required: true },
-    role: { type: String, required: true, enum: ['admin', 'manager', 'user'], default: 'user' },
-    isActive: { type: Boolean, required: true, default: true },
-    isDeleted: { type: Boolean, required: true, default: false },
-    createdAt: { type: Date, required: true, default: Date.now },
-    updatedAt: { type: Date, required: true, default: Date.now },
+    role: { type: String, required: false, enum: ['admin', 'manager', 'user'], default: 'user' },
+    isActive: { type: Boolean, required: false, default: true },
+    isDeleted: { type: Boolean, required: false, default: false },
+    createdAt: { type: Date, required: false, default: Date.now },
+    updatedAt: { type: Date, required: false, default: Date.now },
 })
 
 const User = models.User || model('User', UserSchema);
