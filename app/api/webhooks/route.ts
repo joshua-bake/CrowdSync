@@ -92,7 +92,8 @@ export async function POST(req: Request) {
         }
 
         const updatedUser = await updateUser(id, user)
-
+        console.log('updatedUser:', evt.data.id)
+        console.log('updatedUser:', updatedUser)
         return NextResponse.json({ message: 'OK', user: updatedUser })
     }
 
