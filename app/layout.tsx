@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Crowd Sync",
-  description: "Crowd Sync is an event management system.",
+  description: "Crowd Sync is an event management system application.",
   icons: {
     icon: '/assets/images/logo.svg'
   }
